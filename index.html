@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Detectives Concept Quiz</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fdfdfd;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        .question p {
+            font-weight: bold;
+            margin-top: 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #results {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f8f5;
+            border: 1px solid #1abc9c;
+            border-radius: 4px;
+            display: none;
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+        }
+        .citation {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Disease Detectives Concept Quiz</h1>
+    <form id="quizForm">
+
+        <div class="question">
+            <p>1. What is a key difference between a propagated and a point source outbreak? <span class="citation">[cite: 29, 34, 35]</span></p>
+            <label><input type="radio" name="q1" value="a"> A) Propagated outbreaks always originate from a single contaminated food item.</label>
+            <label><input type="radio" name="q1" value="b"> B) A propagated outbreak results in a chain of transmission through person-to-person contact and has irregular peaks, while a point source has a common source. </label>
+            <label><input type="radio" name="q1" value="c"> C) Point source outbreaks happen over several incubation periods.</label>
+        </div>
+
+        <div class="question">
+            <p>2. What is a reservoir of disease, and what was the reservoir for the bubonic plague? <span class="citation">[cite: 40, 43, 44]</span></p>
+            <label><input type="radio" name="q2" value="a"> A) The environment where organisms thrive; fleas and/or rats.</label>
+            <label><input type="radio" name="q2" value="b"> B) The intermediate host before transmission; infected humans.</label>
+            <label><input type="radio" name="q2" value="c"> C) A contaminated water source; bacteria.</label>
+        </div>
+
+        <div class="question">
+            <p>3. Distinguish between the terms prevalence and incidence. <span class="citation">[cite: 57, 58, 60, 62, 63]</span></p>
+            <label><input type="radio" name="q3" value="a"> A) Incidence refers to the total number of existing cases (disease burden), while prevalence refers to new cases.</label>
+            <label><input type="radio" name="q3" value="b"> B) Incidence is the rate of occurrence of new cases (disease risk), while prevalence is the number of existing cases at a given point in time (disease burden).</label>
+            <label><input type="radio" name="q3" value="c"> C) There is no difference; both measure new cases over time.</label>
+        </div>
+
+        <div class="question">
+            <p>4. Anthrax cases are maintained in cattle and wild deer populations at all times. What is this state considered? <span class="citation">[cite: 68, 69, 70]</span></p>
+            <label><input type="radio" name="q4" value="a"> A) Epidemic</label>
+            <label><input type="radio" name="q4" value="b"> B) Pandemic</label>
+            <label><input type="radio" name="q4" value="c"> C) Endemic</label>
+        </div>
+
+        <div class="question">
+            <p>5. Can epidemics be caused by non-infectious agents? <span class="citation">[cite: 77, 80]</span></p>
+            <label><input type="radio" name="q5" value="a"> A) No, epidemics strictly involve infectious agents like viruses and bacteria.</label>
+            <label><input type="radio" name="q5" value="b"> B) Yes, chronic non-infectious conditions like diabetes and obesity exist in epidemic proportions in the US.</label>
+        </div>
+
+        <div class="question">
+            <p>6. What does a cross-sectional study entail? <span class="citation">[cite: 84, 86, 87]</span></p>
+            <label><input type="radio" name="q6" value="a"> A) An observational study where a sample of persons is enrolled and their exposures and health outcomes are measured simultaneously at a specific point in time.</label>
+            <label><input type="radio" name="q6" value="b"> B) A study that compares a group with a disease to a group without the disease over several years.</label>
+            <label><input type="radio" name="q6" value="c"> C) An experimental trial measuring the efficacy of a new vaccine.</label>
+        </div>
+
+        <div class="question">
+            <p>7. If 350 people contract typhoid fever out of a group of 500 people, what is the attack rate? <span class="citation">[cite: 141, 144]</span></p>
+            <label><input type="radio" name="q7" value="a"> A) 35%</label>
+            <label><input type="radio" name="q7" value="b"> B) 70%</label>
+            <label><input type="radio" name="q7" value="c"> C) 0.7%</label>
+        </div>
+
+        <div class="question">
+            <p>8. What is the difference between primordial and primary level prevention? <span class="citation">[cite: 170, 171, 172, 173]</span></p>
+            <label><input type="radio" name="q8" value="a"> A) Primordial prevents risk factors from developing in the first place, while primary manages risk factors already present to prevent disease onset.</label>
+            <label><input type="radio" name="q8" value="b"> B) Primary prevents risk factors from developing, while primordial cures the disease.</label>
+            <label><input type="radio" name="q8" value="c"> C) Primordial is used for infectious diseases, and primary is used for non-infectious diseases.</label>
+        </div>
+
+        <div class="question">
+            <p>9. In a case-control study, there are 90 exposed cases, 10 unexposed cases, 15 exposed controls, and 85 unexposed controls. What is the odds ratio? <span class="citation">[cite: 179, 188]</span></p>
+            <label><input type="radio" name="q9" value="a"> A) 9.0</label>
+            <label><input type="radio" name="q9" value="b"> B) 0.17</label>
+            <label><input type="radio" name="q9" value="c"> C) 51</label>
+        </div>
+
+        <div class="question">
+            <p>10. What is the difference between elimination and eradication in disease control? <span class="citation">[cite: 254, 256, 257]</span></p>
+            <label><input type="radio" name="q10" value="a"> A) Elimination reduces worldwide incidence to zero, while eradication reduces incidence in a specific region.</label>
+            <label><input type="radio" name="q10" value="b"> B) Elimination reduces incidence to zero in a particular geographic area requiring continued intervention, while eradication is worldwide and intervention is no longer needed.</label>
+            <label><input type="radio" name="q10" value="c"> C) There is no difference; the terms are used interchangeably by the CDC.</label>
+        </div>
+
+        <button type="button" onclick="calculateScore()">Submit Answers</button>
+    </form>
+
+    <div id="results"></div>
+</div>
+
+<script>
+    function calculateScore() {
+        const answers = {
+            q1: 'b',
+            q2: 'a',
+            q3: 'b',
+            q4: 'c',
+            q5: 'b',
+            q6: 'a',
+            q7: 'b',
+            q8: 'a',
+            q9: 'c',
+            q10: 'b'
+        };
+
+        let score = 0;
+        let total = Object.keys(answers).length;
+        const form = document.getElementById('quizForm');
+        
+        for (let key in answers) {
+            const selected = form.querySelector(`input[name="${key}"]:checked`);
+            if (selected && selected.value === answers[key]) {
+                score++;
+            }
+        }
+
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.style.display = 'block';
+        resultsDiv.innerHTML = `You scored ${score} out of ${total}!`;
+        
+        if(score === total) {
+            resultsDiv.style.color = '#155724';
+            resultsDiv.style.backgroundColor = '#d4edda';
+            resultsDiv.style.borderColor = '#c3e6cb';
+        } else {
+            resultsDiv.style.color = '#856404';
+            resultsDiv.style.backgroundColor = '#fff3cd';
+            resultsDiv.style.borderColor = '#ffeeba';
+            resultsDiv.innerHTML += '<br><span style="font-size: 14px; font-weight: normal;">Review the material to catch the ones you missed.</span>';
+        }
+    }
+</script>
+
+</body>
+</html>
